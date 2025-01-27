@@ -20,7 +20,7 @@ class LogisticRegressionModel(nn.Module):
 @st.cache_resource
 def load_model():
     model = LogisticRegressionModel(input_dim=7, num_classes=7)
-    model.load_state_dict(torch.load("C:/Users/MSI/Downloads/logistic_regression_model.pth"))
+    model.load_state_dict(torch.load("logistic_regression_model.pth"))
     model.eval()  # Set the model to evaluation mode
     return model
 
