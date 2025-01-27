@@ -27,7 +27,7 @@ def load_model():
 # Load and cache the dataset
 @st.cache_data
 def load_dataset():
-    df = pd.read_excel("C:/Users/MSI/Downloads/dry+bean+dataset/DryBeanDataset/Dry_Bean_Dataset.xlsx")
+    df = pd.read_excel("Dry_Bean_Dataset.xlsx")
     X = df.drop(columns=['Class'])
     y = df['Class']
     return X, y
